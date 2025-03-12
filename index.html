@@ -12,22 +12,22 @@
    <img src="IMP.webp" alt="Algebrabot" style="max-width: 100%; height: auto;">
 
     <!-- Script del chatbot de Voiceflow -->
- <script type="text/javascript">
-  (function(d, t) {
-      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-      v.onload = function() {
-        window.voiceflow.chat.load({
-          verify: { projectID: '67a2cd7055f1746450db7215' },
-          url: 'https://general-runtime.voiceflow.com',
-          versionID: 'production', 
-          voice: { 
-            url: "https://runtime-api.voiceflow.com" 
-          }
-        });
-      }
-      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-  })(document, 'script');
-</script>
+<script type='text/javascript'>
+        (function(d, t) {
+                    var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                    v.onload = function() {
+                        window.voiceflow.chat.load({
+                            verify: { projectID: '67a2cd7055f1746450db7215' },
+                            url: 'https://nestor.flowbridge.app/api/webchat/2/',
+                            assistant: {
+                                stylesheet: 'https://nestor.flowbridge.app/api/webchat/2/css'
+                            },
+                            versionID: 'production'
+                        });
+                    }
+                    v.src = 'https://flowbridge-chat-assets.s3.eu-west-3.amazonaws.com/bundle/flowbridge-chat-v1.mjs'; v.type = 'text/javascript'; s.parentNode.insertBefore(v, s);
+                })(document, 'script');
+                </script>
     <!-- Script para mantener la pestaña activa -->
     <script>
       // Función para mantener la pestaña activa
